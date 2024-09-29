@@ -48,10 +48,10 @@
    ros2 launch urdf_tutorial display.launch.py model:=/home/{{User_name}}/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro
    ```
 
-# Commands
+# Commands to run rviz
 1. Publish the URDF data in ROS:
    ```
-   ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro /home/aditya/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro)"
+   ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro /home/{{User_name}}/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro)"
    ```
 2. Run the joint state publisher gui:
    ```
@@ -61,4 +61,9 @@
    ```
    ros2 run rviz2 rviz2
    ```
+
+# Launch RViz from launch file
+```
+ros2 launch arduinobot_description display.launch.py 
+```
 
