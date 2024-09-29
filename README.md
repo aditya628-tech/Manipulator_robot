@@ -32,18 +32,11 @@
    ```
    colcon build
    ```
-## Run RViz to check if everything is built and running:
-   ## Build command
-1. Run the following command in the root of the git repository:
-   ```
-   colcon build
-   ```
-## Run RViz to check if everything is built and running:
-   ### Source the setup into terminal
+2. Source the setup file into the terminal:
    ```
    . install/setup.bash
-   ```
-   ### Launch RViz
+
+## Run RViz to check if everything is built and running:
    ```
    ros2 launch urdf_tutorial display.launch.py model:=/home/{{User_name}}/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro
    ```
@@ -61,9 +54,14 @@
    ```
    ros2 run rviz2 rviz2
    ```
+   #### Note: Always source the latest setup.bash into the terminal before executing any command
 
 # Launch RViz from launch file
 ```
 ros2 launch arduinobot_description display.launch.py 
+```
+# Launch Gazebo simulation
+```
+ros2 launch arduinobot_description gazebo.launch.py
 ```
 
