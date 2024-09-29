@@ -53,4 +53,12 @@
    ```
    ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro /home/aditya/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro)"
    ```
+2. Run the joint state publisher gui:
+   ```
+   ros2 run joint_state_publisher_gui joint_state_publisher_gui
+   ```
+3. Launch RViz2:
+   ```
+   ros2 run rviz2 rviz2
+   ```
 
