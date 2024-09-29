@@ -64,4 +64,8 @@ ros2 launch arduinobot_description display.launch.py
 ```
 ros2 launch arduinobot_description gazebo.launch.py
 ```
+# Launch controller launch file
+```
+ros2 launch arduinobot_controller controller.launch.py
+```
 
