@@ -37,3 +37,9 @@
    ros2 launch urdf_tutorial display.launch.py model:=/home/{{User_name}}/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro
    ```
 
+# Commands
+1. Publish the URDF data in ROS:
+   ```
+   ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro /home/aditya/Manipulator_robot/src/arduinobot_description/urdf/arduinobot.urdf.xacro)"
+   ```
+
