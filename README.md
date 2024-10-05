@@ -17,6 +17,7 @@
    sudo apt-get install ros-humble-moveit
    sudo apt install python3-colcon-common-extensions
    sudo apt-get install libserial-dev
+   sudo apt install ros-humble-rmw-cyclonedds-cpp
    pip install pyserial
    pip install flask
    pip install flask-ask-sdk
