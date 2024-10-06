@@ -69,4 +69,8 @@ ros2 launch arduinobot_description gazebo.launch.py
 ```
 ros2 launch arduinobot_controller controller.launch.py
 ```
+# Launch RViz with Moveit2
+```
+ros2 launch arduinobot_moveit moveit.launch.py
+```
 
