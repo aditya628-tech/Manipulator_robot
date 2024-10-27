@@ -2,4 +2,3 @@ build/
 install/
 log/
 .vscode/
-arduino_bot_cpp_examples/
